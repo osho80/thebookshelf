@@ -1,0 +1,29 @@
+.book-filter {
+    height: 5vh;
+    width: 75vw;
+
+    .title-input, .price-input {
+        width: 30vw;
+    }
+
+    .sale-filter {
+        margin-top: 2%;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .book-filter {
+        width: 90vw;
+
+        .price-input {
+            width: 15vw;
+        }
+        .title-input {
+            width: 50vw;
+        }
+        .sale-filter {
+            font-size: 0.8rem;
+        }
+    }
+}

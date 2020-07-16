@@ -1,0 +1,43 @@
+.book-search {
+    width: 100%;
+    justify-content: space-between;
+    .google-input {
+        width: 30vw;
+    }
+    h2 {
+        margin: 0;
+    }
+    input {
+        border-radius: 8px;
+        border: purple;
+        padding: 1%;
+        height: 70%;
+        margin-bottom: 1%;
+    }
+    .search-results {
+
+        .close-search {
+            width: 1.2rem;
+            margin: 0.5rem 0 0 40vw;
+            cursor: pointer;
+            z-index: 2;
+        }
+
+    }
+}
+
+
+.results-preview {
+    
+    width: 100%;
+
+}
+
+
+@media (max-width: 600px) {
+    .book-search {
+        .google-input {
+            width: 50vw;
+        }
+    }
+}

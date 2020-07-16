@@ -1,0 +1,78 @@
+// Setup
+@import "setup/variables.scss";
+@import "setup/functions.scss";
+@import "setup/mixins.scss";
+@import "setup/typography.scss";
+
+// Basics
+@import "basics/helpers.scss";
+@import "basics/layout.scss";
+@import "basics/base.scss";
+@import "basics/links.scss";
+@import "basics/buttons.scss";
+
+// Components
+@import "components/book-preview.scss";
+@import "components/search-preview.scss";
+@import "components/book-details.scss";
+@import "components/book-edit.scss";
+@import "components/book-app.scss";
+@import "components/google-search.scss";
+@import "components/book-filter.scss";
+@import "components/search-selected.scss";
+@import "views/home-page.scss";
+
+//App
+
+.App-header {
+    
+    .header-nav {
+        margin: 0 8%;
+        height: 8vh;
+
+        .logo {
+            text-transform: uppercase;
+            font-family: MontserratSubrayada 
+        }
+
+        .nav-links {
+            z-index: 1;
+            width: 15vw;
+        }
+    }
+   
+    
+}
+
+.main {
+    margin: 0 8%;
+    border-right: 1px solid silver; 
+    border-left: 1px solid silver; 
+    border-collapse: collapse;
+    
+}
+
+@media (max-width: 600px) {
+    .App-header {
+        .header-nav {
+            margin: 0 1%;
+            width: 90%;
+            height: 4vh;
+        }
+        .logo {
+            font-size: 1.3rem;
+        }
+        .nav-links {
+            a:first-child {
+            margin-right: 4%;
+            }
+            a:last-child {
+                margin-left: 4%;
+            }
+        }
+    }
+
+    .main {
+        margin: 0 1%;
+    }
+}

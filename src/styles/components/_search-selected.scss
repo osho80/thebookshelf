@@ -1,0 +1,66 @@
+.view-selected {
+    position: absolute;
+    background-color: $clr3;
+    width: 75vw;
+    top: 0.5vh;
+    padding: 1rem;
+    border-radius: 12px;
+    z-index: 2;
+    .selected-details {
+        
+        .side-bar {
+            margin-right: 2rem;
+        
+            .exit-btn {
+                width: 1.2rem;
+                transform: rotate(45deg);
+                cursor: pointer;
+            }
+    
+            .google-save {
+                width: 1.7rem;
+                cursor: pointer;
+                margin: 1rem 0 0;
+            }
+    
+            .book-img {
+                margin: 1.5rem 0.5rem 0 0;
+                
+            }
+        }
+
+        .book-info {
+            line-height: 1em;
+
+        }
+    }
+    
+}
+
+@media (max-width: 600px) {
+    .view-selected {
+        width: 90vw;
+        top: 0.8vh;
+        .selected-details {
+            flex-direction: column;
+
+            .side-bar {
+                width: 100%;
+                .book-img {
+                    margin: 0 auto;
+                }
+            }
+            .google-save {
+                position: absolute;
+                bottom: 2%;
+                right: 45%;
+
+            }
+
+            .extra-details {
+                margin-bottom: 2rem;
+            }
+        } 
+        
+    }
+}

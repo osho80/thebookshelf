@@ -1,0 +1,60 @@
+.book-details {
+    display: flex;
+    position: relative;
+    .book-img{
+        margin: 4% 2%;
+        img {
+            width: 200px;
+        }
+    }
+
+    .detail-btns.back {
+        width: 1.5rem;
+        position: absolute;
+        left: 2%;
+    }
+
+    .book-info {
+        margin-right: 3%;
+        .sale {
+            width: 4rem;
+            position: absolute;
+            right: 3%;
+            bottom: 0;
+            
+        }
+    }
+
+    .action-btns {
+        
+        .detail-btns {
+            width: 2rem;
+            cursor: pointer;
+            margin-top: 2%;
+        }
+        
+    }
+}
+
+@media (max-width: 600px) {
+    
+    .book-details {
+        flex-direction: column;
+        .book-img {
+            margin: 3% auto 0;
+            display: flex;
+            .action-btns {
+                flex-direction: column-reverse;
+                margin-left: 5%;
+            }
+        }
+        .book-info {
+            margin: 0 5%;
+            .sale {
+                width: 3rem;
+                bottom: 60vh;
+            }
+
+        }
+    }
+}

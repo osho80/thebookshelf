@@ -1,0 +1,42 @@
+.action-center {
+    background-color: $clr1;
+    border-top: 1px solid silver;
+    border-bottom: 1px solid silver;
+    padding: 0 3% ;
+    position: relative;
+
+    
+    input {
+        padding: 1%;
+        border-radius: 8px;
+        border: purple;
+        margin-top: 2%;
+    }
+
+    
+    .google-addbtn {
+        width: 75Vw;
+        .add-book {
+            
+            position: absolute;
+            top: 8vh;
+            right: 5vw;
+            width: 1.2rem;
+            cursor: pointer;
+        
+            }
+    }
+    
+}
+
+@media (max-width: 600px) {
+    .action-center {
+        .google-addbtn {
+            .add-book {
+                width: 0.9rem;
+                top: 6vh;
+                right: 6vw;
+            }
+        }
+    }
+}

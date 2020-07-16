@@ -1,25 +1,45 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Router, Route, Switch } from "react-router";
+import { Link } from 'react-router-dom'
+import './styles/global.scss';
+import history from './history'
+
+import BookApp from './pages/BookApp.jsx'
+import { About } from './pages/About.jsx'
+import BookDetails from './pages/BookDetails.jsx'
+import BookEdit from './pages/BookEdit.jsx'
+import Home from './pages/Home.jsx' 
+
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+
+    <Router history={history}>
+      <div className="App">
+        <header className="App-header">
+          <div className="header-nav flex align-center space-between">
+            <h1 className="logo">the bookshelf</h1>
+            <div className="nav-links flex space-around">
+              <Link to="/about">About</Link> |
+              <Link to="/book">Store</Link>
+            </div>
+          </div>
+        </header>
+        <section className="main">
+          <Switch>
+            <Route exact path="/"><Home/></Route>
+            <Route exact path="/book"><BookApp></BookApp></Route>
+            <Route path="/about"><About /></Route>
+            <Route exact path="/book/:id" component={BookDetails}></Route>
+            <Route path="/edit/:id?" component={BookEdit}></Route>
+
+          </Switch>
+        </section>
+      </div>
+    </Router>
+
   );
 }
 

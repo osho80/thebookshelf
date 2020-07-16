@@ -1,0 +1,91 @@
+.back-btn {
+    width: 1.5rem;
+    margin-left: 2%;
+
+}
+.book-edit {
+    width: 98%;
+    margin-left: 2%;
+
+    .book-img{
+        width: 150px;
+        
+        img {
+            margin: 1rem 2rem 0 0;
+            border-radius: 12px;
+            width: 100%;
+            
+        }
+    }
+    .edit-form {
+        margin-top: 1rem;
+
+        label {
+            margin: 15px;
+        }
+        .edit-input {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 40vw;
+            margin-left: 6vw;
+
+
+            input {
+                padding: 5px;
+                margin-bottom: 5px;
+                height: 1.5rem;
+                justify-content: flex-end;
+            }
+
+            .upload-btn {
+                width: 2rem;
+                margin: 0 2.5rem;
+            }
+        }
+
+        button {
+            border-radius: 0.8rem;
+            margin-top: 5%;
+            margin-left: 40%;
+            background-color: $clr1;
+            border-color: $clr3;
+            
+        }
+        .book-save {
+            width: 3rem;
+            margin: 5px;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .book-edit {
+        flex-direction: column;
+        .book-img {
+            margin: 0 auto;
+        }
+        .edit-form {
+            width: 95vw;
+            label {
+                margin: 3px;
+            }
+            .edit-input {
+                font-size: 0.9rem;
+                flex-direction: column;
+                margin: 0 auto;
+                &.desc-text {
+                    textarea {
+                        width: 80vw;
+                    }
+                }
+                input {
+                    margin-bottom: 0px;
+                }
+            }
+        }
+
+    }
+}
+
+
