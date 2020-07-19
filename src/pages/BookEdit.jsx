@@ -72,7 +72,7 @@ class BookEdit extends Component{
     }
 
     render(){
-        const { book, apllyGoogle } = this.state
+        const { book } = this.state
         
         return(
             (!book) ? <h3>Loading</h3> :
